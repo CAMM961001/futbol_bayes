@@ -1,0 +1,15 @@
+# Conda environmnet
+name: stan
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pyyaml
+  - pandas
+  - numpy
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - scipy
+  - cmdstanpy
