@@ -1,0 +1,9 @@
+main:
+  components_repository: "https://github.com/CAMM961001/futbol_bayes"
+  project_name: futbol_bayes
+  steps: all
+datos:
+  raw: "datos/raw/futbol.csv"
+modelos:
+  inputs: "modelos/inputs"
+  outputs: "modelos/outputs"
