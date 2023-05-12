@@ -6,5 +6,5 @@ datos:
   raw: "datos/raw/futbol.csv"
   cat_raw: "datos/raw/_cat_futbol.info"
 modelos:
-  inputs: "modelos/inputs/"
-  outputs: "modelos/outputs/"
+  dir: "modelos"
+  template: "modelos/__template__.stan"
