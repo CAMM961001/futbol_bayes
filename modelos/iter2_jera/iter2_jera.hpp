@@ -8,30 +8,40 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 23> locations_array__ = 
+static constexpr std::array<const char*, 33> locations_array__ = 
 {" (found before start of program)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 11, column 4 to column 31)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 4 to column 33)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 4 to column 33)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 11, column 4 to column 35)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 4 to column 47)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 4 to column 47)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 14, column 4 to column 18)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 15, column 4 to column 21)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 32, column 4 to column 85)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 20, column 4 to column 65)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 21, column 4 to column 65)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 23, column 4 to column 55)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 24, column 4 to column 55)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 26, column 4 to column 36)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 27, column 4 to column 36)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 28, column 4 to column 32)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 20, column 4 to column 48)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 21, column 4 to column 48)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 24, column 8 to column 90)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 23, column 4 to line 24, column 90)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 27, column 8 to column 90)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 26, column 4 to line 27, column 90)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 44, column 4 to column 63)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 45, column 4 to column 63)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 32, column 4 to column 38)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 33, column 4 to column 38)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 35, column 4 to column 47)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 36, column 4 to column 47)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 38, column 4 to column 28)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 39, column 4 to column 28)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 40, column 4 to column 30)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 3, column 4 to column 27)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 5, column 10 to column 19)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 5, column 4 to column 45)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 5, column 4 to column 46)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 6, column 10 to column 19)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 6, column 4 to column 45)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 11, column 11 to column 20)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 11 to column 20)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 11 to column 20)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 32, column 10 to column 19)"};
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 6, column 4 to column 46)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 11, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 20, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 21, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 44, column 10 to column 19)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 45, column 10 to column 19)"};
 
 
 
@@ -69,58 +79,68 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 14;
+      current_statement__ = 21;
       context__.validate_dims("data initialization","n_matches","int",
            std::vector<size_t>{});
       n_matches = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 14;
+      current_statement__ = 21;
       n_matches = context__.vals_i("n_matches")[(1 - 1)];
-      current_statement__ = 14;
+      current_statement__ = 21;
       stan::math::check_greater_or_equal(function__, "n_matches", n_matches,
                                             1);
-      current_statement__ = 15;
+      current_statement__ = 22;
       stan::math::validate_non_negative_index("goals_home", "n_matches",
                                               n_matches);
-      current_statement__ = 16;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","goals_home","int",
            std::vector<size_t>{static_cast<size_t>(n_matches)});
       goals_home = 
         std::vector<int>(n_matches, std::numeric_limits<int>::min());
       
       
-      current_statement__ = 16;
+      current_statement__ = 23;
       goals_home = context__.vals_i("goals_home");
-      current_statement__ = 16;
+      current_statement__ = 23;
       stan::math::check_greater_or_equal(function__, "goals_home",
                                             goals_home, 0);
-      current_statement__ = 17;
+      current_statement__ = 24;
       stan::math::validate_non_negative_index("goals_away", "n_matches",
                                               n_matches);
-      current_statement__ = 18;
+      current_statement__ = 25;
       context__.validate_dims("data initialization","goals_away","int",
            std::vector<size_t>{static_cast<size_t>(n_matches)});
       goals_away = 
         std::vector<int>(n_matches, std::numeric_limits<int>::min());
       
       
-      current_statement__ = 18;
+      current_statement__ = 25;
       goals_away = context__.vals_i("goals_away");
-      current_statement__ = 18;
+      current_statement__ = 25;
       stan::math::check_greater_or_equal(function__, "goals_away",
                                             goals_away, 0);
-      current_statement__ = 19;
+      current_statement__ = 26;
       stan::math::validate_non_negative_index("baseline", "n_matches",
                                               n_matches);
-      current_statement__ = 20;
+      current_statement__ = 27;
       stan::math::validate_non_negative_index("skill_home", "n_matches",
                                               n_matches);
-      current_statement__ = 21;
+      current_statement__ = 28;
       stan::math::validate_non_negative_index("skill_away", "n_matches",
                                               n_matches);
-      current_statement__ = 22;
-      stan::math::validate_non_negative_index("sims", "n_matches", n_matches);
+      current_statement__ = 29;
+      stan::math::validate_non_negative_index("lambda_home", "n_matches",
+                                              n_matches);
+      current_statement__ = 30;
+      stan::math::validate_non_negative_index("lambda_away", "n_matches",
+                                              n_matches);
+      current_statement__ = 31;
+      stan::math::validate_non_negative_index("sims_home", "n_matches",
+                                              n_matches);
+      current_statement__ = 32;
+      stan::math::validate_non_negative_index("sims_away", "n_matches",
+                                              n_matches);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -146,59 +166,85 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     (void) function__;  // suppress unused var warning
     
     try {
-      Eigen::Matrix<local_scalar_t__, -1, 1> baseline =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      std::vector<local_scalar_t__> baseline =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       current_statement__ = 1;
-      baseline = in__.template read<Eigen::Matrix<local_scalar_t__, -1, 1>>(
-                   n_matches);
-      Eigen::Matrix<local_scalar_t__, -1, 1> skill_home =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      baseline = in__.template read<std::vector<local_scalar_t__>>(n_matches);
+      std::vector<local_scalar_t__> skill_home =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       current_statement__ = 2;
-      skill_home = in__.template read<
-                     Eigen::Matrix<local_scalar_t__, -1, 1>>(n_matches);
-      Eigen::Matrix<local_scalar_t__, -1, 1> skill_away =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      skill_home = in__.template read_constrain_lb<
+                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+                     n_matches);
+      std::vector<local_scalar_t__> skill_away =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       current_statement__ = 3;
-      skill_away = in__.template read<
-                     Eigen::Matrix<local_scalar_t__, -1, 1>>(n_matches);
+      skill_away = in__.template read_constrain_lb<
+                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+                     n_matches);
       local_scalar_t__ mu_teams = DUMMY_VAR__;
       current_statement__ = 4;
       mu_teams = in__.template read<local_scalar_t__>();
       local_scalar_t__ sigma_teams = DUMMY_VAR__;
       current_statement__ = 5;
       sigma_teams = in__.template read<local_scalar_t__>();
-      {
-        current_statement__ = 7;
-        lp_accum__.add(
-          stan::math::poisson_log_lpmf<propto__>(goals_home,
-            stan::math::subtract(stan::math::add(baseline, skill_home),
-              skill_away)));
+      std::vector<local_scalar_t__> lambda_home =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
+      std::vector<local_scalar_t__> lambda_away =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
+      current_statement__ = 9;
+      for (int match = 1; match <= n_matches; ++match) {
         current_statement__ = 8;
+        stan::model::assign(lambda_home,
+          stan::math::exp(
+            ((stan::model::rvalue(baseline, "baseline",
+                stan::model::index_uni(match)) +
+               stan::model::rvalue(skill_home, "skill_home",
+                 stan::model::index_uni(match))) -
+              stan::model::rvalue(skill_away, "skill_away",
+                stan::model::index_uni(match)))),
+          "assigning variable lambda_home", stan::model::index_uni(match));
+      }
+      current_statement__ = 11;
+      for (int match = 1; match <= n_matches; ++match) {
+        current_statement__ = 10;
+        stan::model::assign(lambda_away,
+          stan::math::exp(
+            ((stan::model::rvalue(baseline, "baseline",
+                stan::model::index_uni(match)) +
+               stan::model::rvalue(skill_away, "skill_away",
+                 stan::model::index_uni(match))) -
+              stan::model::rvalue(skill_home, "skill_home",
+                stan::model::index_uni(match)))),
+          "assigning variable lambda_away", stan::model::index_uni(match));
+      }
+      current_statement__ = 6;
+      stan::math::check_greater_or_equal(function__, "lambda_home",
+                                            lambda_home, 0);
+      current_statement__ = 7;
+      stan::math::check_greater_or_equal(function__, "lambda_away",
+                                            lambda_away, 0);
+      {
+        current_statement__ = 14;
         lp_accum__.add(
-          stan::math::poisson_log_lpmf<propto__>(goals_away,
-            stan::math::subtract(stan::math::add(baseline, skill_away),
-              skill_home)));
-        current_statement__ = 9;
+          stan::math::poisson_lpmf<propto__>(goals_home, lambda_home));
+        current_statement__ = 15;
+        lp_accum__.add(
+          stan::math::poisson_lpmf<propto__>(goals_away, lambda_away));
+        current_statement__ = 16;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(skill_home, mu_teams,
-            stan::math::pow(sigma_teams, 2)));
-        current_statement__ = 10;
+            sigma_teams));
+        current_statement__ = 17;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(skill_away, mu_teams,
-            stan::math::pow(sigma_teams, 2)));
-        current_statement__ = 11;
-        lp_accum__.add(
-          stan::math::normal_lpdf<propto__>(baseline, 0,
-            stan::math::pow(4, 2)));
-        current_statement__ = 12;
-        lp_accum__.add(
-          stan::math::normal_lpdf<propto__>(mu_teams, 0,
-            stan::math::pow(4, 2)));
-        current_statement__ = 13;
-        lp_accum__.add(stan::math::uniform_lpdf<propto__>(sigma_teams, 0, 3));
+            sigma_teams));
+        current_statement__ = 18;
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(baseline, 0, 4));
+        current_statement__ = 19;
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(mu_teams, 0, 4));
+        current_statement__ = 20;
+        lp_accum__.add(stan::math::gamma_lpdf<propto__>(sigma_teams, 5, 5));
       }
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -232,30 +278,37 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     (void) function__;  // suppress unused var warning
     
     try {
-      Eigen::Matrix<double, -1, 1> baseline =
-         Eigen::Matrix<double, -1, 1>::Constant(n_matches,
+      std::vector<double> baseline =
+         std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 1;
-      baseline = in__.template read<Eigen::Matrix<local_scalar_t__, -1, 1>>(
-                   n_matches);
-      Eigen::Matrix<double, -1, 1> skill_home =
-         Eigen::Matrix<double, -1, 1>::Constant(n_matches,
+      baseline = in__.template read<std::vector<local_scalar_t__>>(n_matches);
+      std::vector<double> skill_home =
+         std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 2;
-      skill_home = in__.template read<
-                     Eigen::Matrix<local_scalar_t__, -1, 1>>(n_matches);
-      Eigen::Matrix<double, -1, 1> skill_away =
-         Eigen::Matrix<double, -1, 1>::Constant(n_matches,
+      skill_home = in__.template read_constrain_lb<
+                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+                     n_matches);
+      std::vector<double> skill_away =
+         std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 3;
-      skill_away = in__.template read<
-                     Eigen::Matrix<local_scalar_t__, -1, 1>>(n_matches);
+      skill_away = in__.template read_constrain_lb<
+                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+                     n_matches);
       double mu_teams = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 4;
       mu_teams = in__.template read<local_scalar_t__>();
       double sigma_teams = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 5;
       sigma_teams = in__.template read<local_scalar_t__>();
+      std::vector<double> lambda_home =
+         std::vector<double>(n_matches, 
+           std::numeric_limits<double>::quiet_NaN());
+      std::vector<double> lambda_away =
+         std::vector<double>(n_matches, 
+           std::numeric_limits<double>::quiet_NaN());
       out__.write(baseline);
       out__.write(skill_home);
       out__.write(skill_away);
@@ -266,18 +319,61 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
             emit_generated_quantities__)))) {
         return ;
       } 
+      current_statement__ = 9;
+      for (int match = 1; match <= n_matches; ++match) {
+        current_statement__ = 8;
+        stan::model::assign(lambda_home,
+          stan::math::exp(
+            ((stan::model::rvalue(baseline, "baseline",
+                stan::model::index_uni(match)) +
+               stan::model::rvalue(skill_home, "skill_home",
+                 stan::model::index_uni(match))) -
+              stan::model::rvalue(skill_away, "skill_away",
+                stan::model::index_uni(match)))),
+          "assigning variable lambda_home", stan::model::index_uni(match));
+      }
+      current_statement__ = 11;
+      for (int match = 1; match <= n_matches; ++match) {
+        current_statement__ = 10;
+        stan::model::assign(lambda_away,
+          stan::math::exp(
+            ((stan::model::rvalue(baseline, "baseline",
+                stan::model::index_uni(match)) +
+               stan::model::rvalue(skill_away, "skill_away",
+                 stan::model::index_uni(match))) -
+              stan::model::rvalue(skill_home, "skill_home",
+                stan::model::index_uni(match)))),
+          "assigning variable lambda_away", stan::model::index_uni(match));
+      }
+      current_statement__ = 6;
+      stan::math::check_greater_or_equal(function__, "lambda_home",
+                                            lambda_home, 0);
+      current_statement__ = 7;
+      stan::math::check_greater_or_equal(function__, "lambda_away",
+                                            lambda_away, 0);
+      if (emit_transformed_parameters__) {
+        out__.write(lambda_home);
+        out__.write(lambda_away);
+      } 
       if (stan::math::logical_negation(emit_generated_quantities__)) {
         return ;
       } 
-      std::vector<double> sims =
+      std::vector<double> sims_home =
          std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
-      current_statement__ = 6;
-      stan::model::assign(sims,
-        stan::math::poisson_log_rng(
-          stan::math::subtract(stan::math::add(baseline, skill_home),
-            skill_away), base_rng__), "assigning variable sims");
-      out__.write(sims);
+      current_statement__ = 12;
+      stan::model::assign(sims_home,
+        stan::math::poisson_rng(lambda_home, base_rng__),
+        "assigning variable sims_home");
+      std::vector<double> sims_away =
+         std::vector<double>(n_matches, 
+           std::numeric_limits<double>::quiet_NaN());
+      current_statement__ = 13;
+      stan::model::assign(sims_away,
+        stan::math::poisson_rng(lambda_away, base_rng__),
+        "assigning variable sims_away");
+      out__.write(sims_home);
+      out__.write(sims_away);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -298,30 +394,24 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      Eigen::Matrix<local_scalar_t__, -1, 1> baseline =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      std::vector<local_scalar_t__> baseline =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
-        stan::model::assign(baseline, in__.read<local_scalar_t__>(),
-          "assigning variable baseline", stan::model::index_uni(sym1__));
+        baseline[(sym1__ - 1)] = in__.read<local_scalar_t__>();
       }
       out__.write(baseline);
-      Eigen::Matrix<local_scalar_t__, -1, 1> skill_home =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      std::vector<local_scalar_t__> skill_home =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
-        stan::model::assign(skill_home, in__.read<local_scalar_t__>(),
-          "assigning variable skill_home", stan::model::index_uni(sym1__));
+        skill_home[(sym1__ - 1)] = in__.read<local_scalar_t__>();
       }
-      out__.write(skill_home);
-      Eigen::Matrix<local_scalar_t__, -1, 1> skill_away =
-         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(n_matches,
-           DUMMY_VAR__);
+      out__.write_free_lb(0, skill_home);
+      std::vector<local_scalar_t__> skill_away =
+         std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
-        stan::model::assign(skill_away, in__.read<local_scalar_t__>(),
-          "assigning variable skill_away", stan::model::index_uni(sym1__));
+        skill_away[(sym1__ - 1)] = in__.read<local_scalar_t__>();
       }
-      out__.write(skill_away);
+      out__.write_free_lb(0, skill_away);
       local_scalar_t__ mu_teams = DUMMY_VAR__;
       mu_teams = in__.read<local_scalar_t__>();
       out__.write(mu_teams);
@@ -336,7 +426,8 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"baseline", "skill_home",
-      "skill_away", "mu_teams", "sigma_teams", "sims"};
+      "skill_away", "mu_teams", "sigma_teams", "lambda_home", "lambda_away",
+      "sims_home", "sims_away"};
     
     } // get_param_names() 
     
@@ -348,6 +439,9 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
       std::vector<size_t>{static_cast<size_t>(n_matches)},
       std::vector<size_t>{static_cast<size_t>(n_matches)},
       std::vector<size_t>{}, std::vector<size_t>{},
+      std::vector<size_t>{static_cast<size_t>(n_matches)},
+      std::vector<size_t>{static_cast<size_t>(n_matches)},
+      std::vector<size_t>{static_cast<size_t>(n_matches)},
       std::vector<size_t>{static_cast<size_t>(n_matches)}};
     
     } // get_dims() 
@@ -376,13 +470,27 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     param_names__.emplace_back(std::string() + "mu_teams");
     param_names__.emplace_back(std::string() + "sigma_teams");
     if (emit_transformed_parameters__) {
-      
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "lambda_home" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "lambda_away" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     if (emit_generated_quantities__) {
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
         {
-          param_names__.emplace_back(std::string() + "sims" + '.' + std::to_string(sym1__));
+          param_names__.emplace_back(std::string() + "sims_home" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "sims_away" + '.' + std::to_string(sym1__));
         } 
       }
     }
@@ -413,13 +521,27 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     param_names__.emplace_back(std::string() + "mu_teams");
     param_names__.emplace_back(std::string() + "sigma_teams");
     if (emit_transformed_parameters__) {
-      
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "lambda_home" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "lambda_away" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     if (emit_generated_quantities__) {
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
         {
-          param_names__.emplace_back(std::string() + "sims" + '.' + std::to_string(sym1__));
+          param_names__.emplace_back(std::string() + "sims_home" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "sims_away" + '.' + std::to_string(sym1__));
         } 
       }
     }
@@ -428,13 +550,13 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"baseline\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"skill_home\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"skill_away\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"mu_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sims\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"baseline\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"skill_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"skill_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"mu_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"lambda_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"lambda_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"sims_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"sims_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"baseline\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"skill_home\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"skill_away\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(n_matches) + "},\"block\":\"parameters\"},{\"name\":\"mu_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sims\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"baseline\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"skill_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"skill_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"mu_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma_teams\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"lambda_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"lambda_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"transformed_parameters\"},{\"name\":\"sims_home\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"sims_away\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(n_matches) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -449,8 +571,10 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
   ((((n_matches + n_matches) + n_matches) + 1) + 1);
-      const size_t num_transformed = emit_transformed_parameters * 0;
-      const size_t num_gen_quantities = emit_generated_quantities * n_matches;
+      const size_t num_transformed = emit_transformed_parameters * 
+  (n_matches + n_matches);
+      const size_t num_gen_quantities = emit_generated_quantities * 
+  (n_matches + n_matches);
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
       std::vector<int> params_i;
@@ -469,8 +593,10 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
   ((((n_matches + n_matches) + n_matches) + 1) + 1);
-      const size_t num_transformed = emit_transformed_parameters * 0;
-      const size_t num_gen_quantities = emit_generated_quantities * n_matches;
+      const size_t num_transformed = emit_transformed_parameters * 
+  (n_matches + n_matches);
+      const size_t num_gen_quantities = emit_generated_quantities * 
+  (n_matches + n_matches);
       const size_t num_to_write = num_params__ + num_transformed +
         num_gen_quantities;
       vars = std::vector<double>(num_to_write,
