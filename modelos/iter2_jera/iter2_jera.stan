@@ -9,8 +9,8 @@ data {
 parameters {
     // Habilidad por equipo
     array[n_matches] real baseline;
-    array[n_matches] real <lower=0> skill_home;
-    array[n_matches] real <lower=0> skill_away;
+    array[n_matches] real skill_home;
+    array[n_matches] real skill_away;
     real mu_teams;
     real sigma_teams;
 }

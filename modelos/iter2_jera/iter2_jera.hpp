@@ -11,8 +11,8 @@ stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 33> locations_array__ = 
 {" (found before start of program)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 11, column 4 to column 35)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 4 to column 47)",
- " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 4 to column 47)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 12, column 4 to column 37)",
+ " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 13, column 4 to column 37)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 14, column 4 to column 18)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 15, column 4 to column 21)",
  " (in '/home/camm961001/Github/futbol_bayes/modelos/iter2_jera/iter2_jera.stan', line 20, column 4 to column 48)",
@@ -173,14 +173,12 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
       std::vector<local_scalar_t__> skill_home =
          std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       current_statement__ = 2;
-      skill_home = in__.template read_constrain_lb<
-                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+      skill_home = in__.template read<std::vector<local_scalar_t__>>(
                      n_matches);
       std::vector<local_scalar_t__> skill_away =
          std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       current_statement__ = 3;
-      skill_away = in__.template read_constrain_lb<
-                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+      skill_away = in__.template read<std::vector<local_scalar_t__>>(
                      n_matches);
       local_scalar_t__ mu_teams = DUMMY_VAR__;
       current_statement__ = 4;
@@ -287,15 +285,13 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
          std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 2;
-      skill_home = in__.template read_constrain_lb<
-                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+      skill_home = in__.template read<std::vector<local_scalar_t__>>(
                      n_matches);
       std::vector<double> skill_away =
          std::vector<double>(n_matches, 
            std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 3;
-      skill_away = in__.template read_constrain_lb<
-                     std::vector<local_scalar_t__>, jacobian__>(0, lp__,
+      skill_away = in__.template read<std::vector<local_scalar_t__>>(
                      n_matches);
       double mu_teams = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 4;
@@ -405,13 +401,13 @@ class iter2_jera_model final : public model_base_crtp<iter2_jera_model> {
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
         skill_home[(sym1__ - 1)] = in__.read<local_scalar_t__>();
       }
-      out__.write_free_lb(0, skill_home);
+      out__.write(skill_home);
       std::vector<local_scalar_t__> skill_away =
          std::vector<local_scalar_t__>(n_matches, DUMMY_VAR__);
       for (int sym1__ = 1; sym1__ <= n_matches; ++sym1__) {
         skill_away[(sym1__ - 1)] = in__.read<local_scalar_t__>();
       }
-      out__.write_free_lb(0, skill_away);
+      out__.write(skill_away);
       local_scalar_t__ mu_teams = DUMMY_VAR__;
       mu_teams = in__.read<local_scalar_t__>();
       out__.write(mu_teams);
