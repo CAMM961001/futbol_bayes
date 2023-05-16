@@ -42,8 +42,8 @@ model {
     boost_local ~ normal(0, 1);
     base_ataque ~ normal(0, sigma_ataque);
     base_defensa ~ normal(0, sigma_defensa);
-    sigma_ataque ~ cauchy(0, 3);
-    sigma_defensa ~ cauchy(0, 3);
+    sigma_ataque ~ gamma(5, 5); //cauchy(0,3)
+    sigma_defensa ~ gamma(5, 5);
 
     // Restricción de suma cero
     sum(ataque) ~ normal(0, 0.01);
@@ -55,5 +55,12 @@ model {
 }
 
 generated quantities {
-    // ... declarations ... statements ...
+  // Simulaciones de la posterior
+    int <lower=0> sims_local[n_partidos];
+    int <lower=0> sims_visita[n_partidos];
+
+    for (idp_ in 1:n_partidos) {
+        sims_local[idp_] = poisson_log_rng(intercepto + boost_local + ataque[locales[idp_]] - defensa[visitantes[idp_]]);
+        sims_visita[idp_] = poisson_log_rng(intercepto + ataque[visitantes[idp_]] - defensa[locales[idp_]]);
+    }
 }
