@@ -8,3 +8,9 @@ datos:
 modelos:
   dir: "modelos"
   template: "modelos/__template__.stan"
+visuals:
+  colors:
+    verde: "#acce91"
+    amarillo: "#ffc125"
+    rojo: "cb4154"
+    azul: "#07d8de"
