@@ -5,6 +5,7 @@ main:
 datos:
   raw: "datos/raw/futbol.csv"
   cat_raw: "datos/raw/_cat_futbol.info"
+  waic: "datos/results/deviance_waic.csv"
 modelos:
   dir: "modelos"
   template: "modelos/__template__.stan"
