@@ -15,12 +15,12 @@ data {
     int <lower=0> n_equipos;
     
     // Indicadores de equipo
-    int <lower=1, upper=n_equipos> locales[n_partidos];
-    int <lower=1, upper=n_equipos> visitantes[n_partidos];
+    array[n_partidos] int <lower=1, upper=n_equipos> locales;
+    array[n_partidos] int <lower=1, upper=n_equipos> visitantes;
     
     // Datos de goles
-    int <lower=0> goles_local[n_partidos];
-    int <lower=0> goles_visita[n_partidos];
+    array[n_partidos] int <lower=0> goles_local;
+    array[n_partidos] int <lower=0> goles_visita;
 }
 
 parameters {
@@ -109,15 +109,27 @@ model {
 }
 
 generated quantities {
-    // Simulaciones de la posterior
+    // Declaración de parámetros para simulaciones de la posterior
     vector[n_partidos] pred_lambda_local;
     vector[n_partidos] pred_lambda_visita;
-    real sims_local[n_partidos];
-    real sims_visita[n_partidos];
+    array[n_partidos] real sims_local;
+    array[n_partidos] real sims_visita;
 
+    // Declaración de parámetros para log-verosimilitud
+    array[n_partidos] real logver_local;
+    array[n_partidos] real logver_visita;
+
+    // Función liga
     pred_lambda_local = boost_local + ataque[locales] - defensa[visitantes];
     pred_lambda_visita = ataque[visitantes] - defensa[locales];
 
+    // Verosimilitud
     sims_local = poisson_log_rng(pred_lambda_local);
     sims_visita = poisson_log_rng(pred_lambda_visita);
+
+    // Log-verosimilitud para métricas de desempeño
+    for (partido in 1:n_partidos){
+        logver_local[partido] = poisson_lpmf(goles_local[partido] | exp(lambda_local[partido]));
+        logver_visita[partido] = poisson_lpmf(goles_visita[partido] | exp(lambda_visita[partido]));
+    }
 }
