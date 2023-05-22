@@ -115,10 +115,6 @@ generated quantities {
     array[n_partidos] real sims_local;
     array[n_partidos] real sims_visita;
 
-    // Declaración de parámetros para log-verosimilitud
-    array[n_partidos] real logver_local;
-    array[n_partidos] real logver_visita;
-
     // Función liga
     pred_lambda_local = boost_local + ataque[locales] - defensa[visitantes];
     pred_lambda_visita = ataque[visitantes] - defensa[locales];
@@ -127,9 +123,13 @@ generated quantities {
     sims_local = poisson_log_rng(pred_lambda_local);
     sims_visita = poisson_log_rng(pred_lambda_visita);
 
+    // Declaración de parámetros para log-verosimilitud
+    /*array[n_partidos] real logver_local;
+    array[n_partidos] real logver_visita;
+
     // Log-verosimilitud para métricas de desempeño
     for (partido in 1:n_partidos){
         logver_local[partido] = poisson_lpmf(goles_local[partido] | exp(lambda_local[partido]));
         logver_visita[partido] = poisson_lpmf(goles_visita[partido] | exp(lambda_visita[partido]));
-    }
+    }*/
 }
