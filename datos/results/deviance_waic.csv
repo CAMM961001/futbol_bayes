@@ -1,9 +1,9 @@
 model,team_type,deviance_waic,se,p_r2
-constantes,local,3043.21,67.14,
-constantes,visita,2566.38,74.34,
-independientes,local,2600.40,46.76,
-independientes,visita,2258.58,40.99,
-jerarquico,local,2602.52,44.39,
-jerarquico,visita,2200.48,40.89,
-multinivel,local,2602.91,44.37
-multinivel,visita,2200.54,40.81,
+constantes,local,3043.21,67.14,0
+constantes,visita,2566.38,74.34,0.001967
+independientes,local,2600.40,46.76,0.021269
+independientes,visita,2258.58,40.99,0.025869
+jerarquico,local,2602.52,44.39,0.01598
+jerarquico,visita,2200.48,40.89,0.016526
+multinivel,local,2602.91,44.37,0.015862
+multinivel,visita,2200.54,40.81,0.015015
