@@ -120,8 +120,8 @@ model {
     region_defensa ~ normal(base_defensa[region_equipo], sigma_defensa_region);
 
     // Restricción de identificabilidad
-    sum(ataque) ~ normal(0, 0.0001);
-    sum(defensa) ~ normal(0, 0.0001);
+    //sum(ataque) ~ normal(0, 0.0001);
+    //sum(defensa) ~ normal(0, 0.0001);
     
     // Verosimilitud
     goles_local ~ poisson_log(lambda_local);

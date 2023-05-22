@@ -51,12 +51,12 @@ model {
     boost_local ~ normal(0, 1);
 
     // Iniciales de ataque y defensa base
-    base_ataque ~ normal(0, 2);
-    base_defensa ~ normal(0, 2);
+    base_ataque ~ normal(0, 0.0001);
+    base_defensa ~ normal(0, 0.0001);
 
     // Restricción de identificabilidad
-    sum(ataque) ~ normal(0, 0.0001);
-    sum(defensa) ~ normal(0, 0.0001);
+    //sum(ataque) ~ normal(0, 0.0001);
+    //sum(defensa) ~ normal(0, 0.0001);
     
     // Verosimilitud
     goles_local ~ poisson_log(lambda_local);
